@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/screens/about/about_mobile.dart';
 import 'package:portfolio/screens/about/about_web.dart';
-import 'package:portfolio/screens/blogs/blogs_mobile.dart';
-import 'package:portfolio/screens/blogs/blogs_web.dart';
 import 'package:portfolio/screens/home/home_screen_mobile.dart';
 import 'package:portfolio/screens/home/home_screen_web.dart';
 import 'package:portfolio/screens/projects/projects_mobile.dart';
@@ -35,14 +33,6 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case ProjectsWeb.routeName:
       return MaterialPageRoute(
         builder: (_) => const ProjectsWeb(),
-      );
-    case BlogsMobile.routeName:
-      return MaterialPageRoute(
-        builder: (_) => const BlogsMobile(),
-      );
-    case BlogsWeb.routeName:
-      return MaterialPageRoute(
-        builder: (_) => const BlogsWeb(),
       );
     case AboutMobile.routeName:
       return MaterialPageRoute(

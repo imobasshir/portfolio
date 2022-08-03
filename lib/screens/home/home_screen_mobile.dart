@@ -2,7 +2,6 @@ import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/screens/about/about_mobile.dart';
-import 'package:portfolio/screens/blogs/blogs_mobile.dart';
 import 'package:portfolio/screens/projects/projects_mobile.dart';
 import 'package:portfolio/screens/resume/resume_mobile.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -21,7 +20,6 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
     MainMobile(),
     ResumeMobile(),
     ProjectsMobile(),
-    BlogsMobile(),
     AboutMobile(),
   ];
 
@@ -57,7 +55,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           ),
           ListTile(
             title: Text(
-              'Projects',
+              'Projects & Tech Stack Used',
               style: TextStyle(
                 fontWeight: FontWeight.w400,
               ),
@@ -66,16 +64,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           ),
           ListTile(
             title: Text(
-              'Blogs',
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          ListTile(
-            title: Text(
-              'About',
+              'About Me',
               style: TextStyle(
                 fontWeight: FontWeight.w400,
               ),

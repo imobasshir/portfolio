@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mobasshir',
       theme: ThemeData(
+        primaryColor: Colors.white,
         useMaterial3: true,
         backgroundColor: Colors.white,
       ),

@@ -30,7 +30,9 @@ class _TopBarState extends State<TopBar> {
               ),
             ),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/homeweb');
+          },
         ),
         InkWell(
           child: const Padding(
@@ -42,7 +44,9 @@ class _TopBarState extends State<TopBar> {
               ),
             ),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/resumeweb');
+          },
         ),
         InkWell(
           child: const Padding(
@@ -54,7 +58,23 @@ class _TopBarState extends State<TopBar> {
               ),
             ),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/projectweb');
+          },
+        ),
+        InkWell(
+          child: const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              'Blogs',
+              style: TextStyle(
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          onTap: () {
+            Navigator.pushNamed(context, '/blogweb');
+          },
         ),
         InkWell(
           child: const Padding(
@@ -66,7 +86,9 @@ class _TopBarState extends State<TopBar> {
               ),
             ),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/aboutweb');
+          },
         ),
       ],
     );

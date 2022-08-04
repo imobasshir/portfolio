@@ -27,7 +27,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
   Widget build(BuildContext context) {
     return BackdropScaffold(
       appBar: BackdropAppBar(
-        title: const Text('Mobasshir'),
+        // title: const Text('Mobasshir'),
         centerTitle: true,
         backgroundColor: Colors.grey[200],
         elevation: 0.0,
@@ -55,7 +55,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           ),
           ListTile(
             title: Text(
-              'Projects & Tech Stack Used',
+              'Projects',
               style: TextStyle(
                 fontWeight: FontWeight.w400,
               ),

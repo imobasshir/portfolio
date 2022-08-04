@@ -15,7 +15,6 @@ class HomeScreenWeb extends StatefulWidget {
 }
 
 class _HomeScreenWebState extends State<HomeScreenWeb> {
-  int _currentIndex = 0;
   final List<Widget> _pages = const [
     MainWeb(),
     ResumeWeb(),
@@ -25,56 +24,42 @@ class _HomeScreenWebState extends State<HomeScreenWeb> {
 
   @override
   Widget build(BuildContext context) {
-    return BackdropScaffold(
-      appBar: BackdropAppBar(
-        title: const Text('Mobasshir'),
-        centerTitle: true,
-        backgroundColor: Colors.grey[200],
-        elevation: 0.0,
+    return DefaultTabController(
+      length: _pages.length,
+      child: Scaffold(
+        appBar: AppBar(
+          // title: const Text(
+          //   'Mobasshir',
+          //   textAlign: TextAlign.center,
+          // ),
+          // centerTitle: true,
+          backgroundColor: Colors.grey[100],
+          elevation: 0,
+          bottom: const TabBar(
+            tabs: [
+              Tab(
+                // icon: Icon(Icons.home),
+                text: 'Home',
+              ),
+              Tab(
+                // icon: Icon(FontAwesomeIcons.file),
+                text: 'Resume',
+              ),
+              Tab(
+                // icon: Icon(FontAwesomeIcons.code),
+                text: 'Projects',
+              ),
+              Tab(
+                // icon: Icon(FontAwesomeIcons.info),
+                text: 'About',
+              ),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: _pages,
+        ),
       ),
-      backLayer: BackdropNavigationBackLayer(
-        itemSplashColor: Colors.grey[100],
-        items: const [
-          ListTile(
-            title: Text(
-              'Home',
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          ListTile(
-            title: Text(
-              'Resume',
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          ListTile(
-            title: Text(
-              'Projects & Tech Stack Used',
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          ListTile(
-            title: Text(
-              'About Me',
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-        ],
-        onTap: (int position) => {setState(() => _currentIndex = position)},
-      ),
-      frontLayer: _pages[_currentIndex],
     );
   }
 }

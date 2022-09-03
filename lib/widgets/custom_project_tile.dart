@@ -33,7 +33,7 @@ class CustomProjectTile extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 20),
-            Text(
+            SelectableText(
               type,
               style: const TextStyle(
                 fontSize: 16,
@@ -42,7 +42,7 @@ class CustomProjectTile extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 28),
-            Text(
+            SelectableText(
               title,
               style: const TextStyle(
                 fontSize: 24,
@@ -51,7 +51,7 @@ class CustomProjectTile extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 28),
-            Text(
+            SelectableText(
               techstack,
               style: const TextStyle(
                 fontSize: 18,

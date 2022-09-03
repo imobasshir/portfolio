@@ -10,7 +10,7 @@ class AboutMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        const Text(
+        const SelectableText(
           'About Me',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -25,8 +25,8 @@ class AboutMobile extends StatelessWidget {
           padding: EdgeInsets.all(8.0),
           child: Card(
             child: ListTile(
-              title: Text(
-                'I, Mobasshir Imam final year undergraduate student of Information Technology at IPEC Ghaziabad. I love to learn more about new technologies and i am currently doing App Development using flutter & practicing Data Structures and Algorithms. I love to solve problem and contribute to open source. And in free time i watch sports like Cricket mainly but some times i also watch Football.',
+              title: SelectableText(
+                'I, Mobasshir Imam final year undergraduate student of Information Technology at IPEC Ghaziabad. I love to learn more about new technologies and i am currently doing App Development using flutter & practicing Data Structures and Algorithms. I also love watch sports like Cricket, Football.',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,

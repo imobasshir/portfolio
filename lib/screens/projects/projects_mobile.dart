@@ -13,7 +13,7 @@ class ProjectsMobile extends StatelessWidget {
         Column(
           children: [
             const SizedBox(height: 20),
-            const Text(
+            const SelectableText(
               'Tools and Technologies Used',
               style: TextStyle(
                 fontSize: 30,
@@ -42,7 +42,7 @@ class ProjectsMobile extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const Text(
+            const SelectableText(
               'Featured Projects',
               style: TextStyle(
                 fontSize: 30,
@@ -57,6 +57,14 @@ class ProjectsMobile extends StatelessWidget {
               type: 'FLUTTER PROJECT',
               title: 'Amazon Clone',
               techstack: 'Flutter, Node.Js, Express.Js, MongoDB',
+            ),
+            const SizedBox(height: 20),
+            CustomProjectTile(
+              url: 'https://github.com/imobasshir/get_instant_help',
+              img: Image.asset('images/help.jpg'),
+              type: 'FLUTTER PROJECT',
+              title: 'Get Instant Help',
+              techstack: 'Flutter, Firebase',
             ),
             const SizedBox(height: 20),
             CustomProjectTile(

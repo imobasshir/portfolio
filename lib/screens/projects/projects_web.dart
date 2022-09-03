@@ -13,7 +13,7 @@ class ProjectsWeb extends StatelessWidget {
         Column(
           children: [
             const SizedBox(height: 20),
-            const Text(
+            const SelectableText(
               'Featured Projects',
               style: TextStyle(
                 fontSize: 30,
@@ -35,6 +35,14 @@ class ProjectsWeb extends StatelessWidget {
                 ),
                 const SizedBox(width: 20),
                 CustomProjectTile(
+                  url: 'https://github.com/imobasshir/get_instant_help',
+                  img: Image.asset('images/help.jpg'),
+                  type: 'FLUTTER PROJECT',
+                  title: 'Get Instant Help',
+                  techstack: 'Flutter, Firebase',
+                ),
+                const SizedBox(width: 20),
+                CustomProjectTile(
                   url: 'https://github.com/imobasshir/news_material3',
                   img: Image.asset('images/news.jpeg'),
                   type: 'FLUTTER PROJECT',
@@ -52,7 +60,7 @@ class ProjectsWeb extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 36),
-            const Text(
+            const SelectableText(
               'Tools and Technologies Used',
               style: TextStyle(
                 fontSize: 30,

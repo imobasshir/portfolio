@@ -23,7 +23,7 @@ class ListTileCustom extends StatelessWidget {
             ListTile(
               title: Column(
                 children: [
-                  Text(
+                  SelectableText(
                     batch,
                     style: const TextStyle(
                       fontSize: 14,
@@ -31,7 +31,7 @@ class ListTileCustom extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  Text(
+                  SelectableText(
                     title,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
@@ -45,7 +45,7 @@ class ListTileCustom extends StatelessWidget {
                 padding: const EdgeInsets.all(2.0),
                 child: Column(
                   children: [
-                    Text(
+                    SelectableText(
                       subtitle,
                       style: const TextStyle(
                         fontSize: 16,
@@ -53,7 +53,7 @@ class ListTileCustom extends StatelessWidget {
                       ),
                       textAlign: TextAlign.center,
                     ),
-                    Text(
+                    SelectableText(
                       marks,
                       style: const TextStyle(
                         fontSize: 16,

@@ -9,7 +9,7 @@ class ResumeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        Text(
+        SelectableText(
           'Education',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -35,7 +35,7 @@ class ResumeMobile extends StatelessWidget {
           subtitle: 'St. Lawrence Convent, Delhi',
           marks: 'CGPA: 7.8',
         ),
-        Text(
+        SelectableText(
           'Experience',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -50,7 +50,7 @@ class ResumeMobile extends StatelessWidget {
           marks:
               'In this internship our task was to made a frontend of a website.',
         ),
-        Text(
+        SelectableText(
           'Achievements',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -62,7 +62,7 @@ class ResumeMobile extends StatelessWidget {
           batch: '11/2021',
           title: 'Robotech Hackathon',
           subtitle: 'Participated in Robotech Hackathon,',
-          marks: 'and we finished 6th.',
+          marks: 'and our team finished in top 5.',
         ),
       ],
     );

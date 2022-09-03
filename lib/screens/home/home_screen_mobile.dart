@@ -110,7 +110,7 @@ class MainMobile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const Text(
+                const SelectableText(
                   'Mobasshir Imam',
                   style: TextStyle(
                     fontSize: 30,
@@ -118,7 +118,7 @@ class MainMobile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const Text(
+                const SelectableText(
                   'Final year Undergrad,\nA learner & love solving problems,\nBuilding Mobile Applications using\n Flutter & CrossPlatform Developer.',
                   textAlign: TextAlign.center,
                   style: TextStyle(

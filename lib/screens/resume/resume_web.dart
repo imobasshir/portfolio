@@ -16,7 +16,7 @@ class ResumeWeb extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  SelectableText(
+                  Text(
                     'Education',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -49,7 +49,7 @@ class ResumeWeb extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  SelectableText(
+                  Text(
                     'Experience',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -64,7 +64,7 @@ class ResumeWeb extends StatelessWidget {
                     marks:
                         'In this internship our task was to made a frontend of a website.',
                   ),
-                  SelectableText(
+                  Text(
                     'Achievements',
                     textAlign: TextAlign.center,
                     style: TextStyle(

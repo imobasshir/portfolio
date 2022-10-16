@@ -13,7 +13,7 @@ class ProjectsMobile extends StatelessWidget {
         Column(
           children: [
             const SizedBox(height: 20),
-            const SelectableText(
+            const Text(
               'Tools and Technologies Used',
               style: TextStyle(
                 fontSize: 30,
@@ -42,7 +42,7 @@ class ProjectsMobile extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const SelectableText(
+            const Text(
               'Featured Projects',
               style: TextStyle(
                 fontSize: 30,

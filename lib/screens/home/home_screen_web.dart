@@ -69,7 +69,7 @@ final Uri emailLaunchUri = Uri(
   scheme: 'mailto',
   path: 'imobasshirimam@gmail.com',
 );
-final Uri _twitter = Uri.parse('https://twitter.com/mobasshirtwts');
+final Uri _twitter = Uri.parse('https://twitter.com/mobasshirstwt');
 
 class MainWeb extends StatelessWidget {
   const MainWeb({Key? key}) : super(key: key);
@@ -83,7 +83,7 @@ class MainWeb extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 20),
-            const SelectableText(
+            const Text(
               'Mobasshir Imam',
               style: TextStyle(
                 fontSize: 38,
@@ -91,7 +91,7 @@ class MainWeb extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const SelectableText(
+            const Text(
               'Final year Undergrad,\nA learner & love solving problems,\nBuilding Mobile Applications using\n Flutter & CrossPlatform Developer.',
               textAlign: TextAlign.center,
               style: TextStyle(

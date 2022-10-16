@@ -85,7 +85,7 @@ final Uri emailLaunchUri = Uri(
   scheme: 'mailto',
   path: 'imobasshirimam@gmail.com',
 );
-final Uri _twitter = Uri.parse('https://twitter.com/mobasshirtwts');
+final Uri _twitter = Uri.parse('https://twitter.com/mobasshirstwt');
 
 class MainMobile extends StatelessWidget {
   const MainMobile({Key? key}) : super(key: key);
@@ -110,7 +110,7 @@ class MainMobile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const SelectableText(
+                const Text(
                   'Mobasshir Imam',
                   style: TextStyle(
                     fontSize: 30,
@@ -118,7 +118,7 @@ class MainMobile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const SelectableText(
+                const Text(
                   'Final year Undergrad,\nA learner & love solving problems,\nBuilding Mobile Applications using\n Flutter & CrossPlatform Developer.',
                   textAlign: TextAlign.center,
                   style: TextStyle(

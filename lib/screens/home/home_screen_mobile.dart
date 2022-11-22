@@ -29,7 +29,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
       appBar: BackdropAppBar(
         // title: const Text('Mobasshir'),
         centerTitle: true,
-        backgroundColor: Colors.grey[200],
+        backgroundColor: const Color.fromARGB(255, 202, 229, 241),
         elevation: 0.0,
       ),
       backLayer: BackdropNavigationBackLayer(

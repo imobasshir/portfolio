@@ -68,6 +68,14 @@ class ProjectsMobile extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             CustomProjectTile(
+              url: 'https://github.com/imobasshir/todo_hive',
+              img: Image.asset('images/crud.png'),
+              type: 'FLUTTER PROJECT',
+              title: 'Todo App',
+              techstack: 'Flutter, Hive',
+            ),
+            const SizedBox(height: 20),
+            CustomProjectTile(
               url: 'https://github.com/imobasshir/news_material3',
               img: Image.asset('images/news.jpeg'),
               type: 'FLUTTER PROJECT',
